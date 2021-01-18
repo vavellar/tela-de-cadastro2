@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form de Registro com Validações JS</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre-se para acessar o sistema</h1>
+        <form id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            
+        </div>
+
+        <div class="half-box">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            
+        </div>
+        
+        <div class="half-box">
+            <label for="lastname">Sobrenome</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+        </div>
+
+        <div class="half-box">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            
+        </div>
+       
+        <div class="half-box">
+            <label for="confirmed-password">Confirmação de senha</label>
+            <input type="password" name="confirmed-password" id="confirmed-password" placeholder="Digite novamente sua senha">
+        </div>
+
+        <div class="full-box">
+           <input type="checkbox" name="agreement" id="agreement">
+           <label for="agreement">Eu li e aceito os <a href="#">termos de uso.</a></label>
+        </div>
+ 
+        <button class="botao" type="submit">Registrar</button>
+        
+        
+    </form>
+
+    </div>
+    <p class="error-validation template"></p>    
+    <script src="js/script.js"></script>
+</body>
+</html>
